@@ -103,23 +103,14 @@
                     <param id="0" name="Variable">HasNoHit</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="5" name="Set frame" sid="148758430468433" type="Eyelid1">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+                <action id="5" name="Set frame" sid="662323863838840" type="Eyelid2">
+                    <param id="0" name="Frame number">4</param>
+                </action>
             </actions>
             <sub-events>
-                <event-block sid="813431028094397">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="282134774045910" type="System">
-                            <param id="0" name="Variable">NoDeath</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="862334741867336" type="System">
-                            <param id="0" name="Variable">Name</param>
-                            <param id="1" name="Value">&quot;Noob&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="5660586456921061">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="7073583585924294" type="RPGText">
@@ -314,7 +305,7 @@
                                     <param id="0" name="Tag">&quot;Music&quot;</param>
                                 </action>
                                 <action id="0" name="Play" sid="504699679720181" type="Audio">
-                                    <param id="0" name="Audio file">Phase 2 megalo</param>
+                                    <param id="0" name="Audio file">The End Of All Judgment</param>
                                     <param id="2" name="Loop">1</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
@@ -494,9 +485,9 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="80140630355217" type="SpeechBubble" />
-                <action id="4" name="Set animation" sid="1266186448284215" type="SansHead">
-                    <param id="0" name="Animation">&quot;LookLeft&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="0" name="Call function" sid="1266186448284215" type="Function">
+                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;LookLeft&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="9564903039530182" type="Function">
                     <param id="0" name="Name">&quot;SansText&quot;</param>
@@ -512,9 +503,9 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="5184984371153454" type="SpeechBubble" />
-                <action id="4" name="Set animation" sid="5291306138511684" type="SansHead">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="0" name="Call function" sid="521886843438842" type="Function">
+                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Default&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="6160373462858134" type="Function">
                     <param id="0" name="Name">&quot;SansText&quot;</param>
@@ -530,9 +521,9 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="4077843787701976" type="SpeechBubble" />
-                <action id="4" name="Set animation" sid="6263510020998762" type="SansHead">
-                    <param id="0" name="Animation">&quot;Wink&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="0" name="Call function" sid="908237003805059" type="Function">
+                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Wink&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="8938939640487405" type="Function">
                     <param id="0" name="Name">&quot;SansText&quot;</param>
@@ -548,9 +539,9 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="2584035881780578" type="SpeechBubble" />
-                <action id="4" name="Set animation" sid="8362377340837748" type="SansHead">
-                    <param id="0" name="Animation">&quot;ClosedEyes&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="0" name="Call function" sid="566807652124603" type="Function">
+                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;ClosedEyes&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="2694031369129686" type="Function">
                     <param id="0" name="Name">&quot;SansText&quot;</param>
@@ -566,9 +557,9 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="3244047799302167" type="SpeechBubble" />
-                <action id="4" name="Set animation" sid="5232358365858677" type="SansHead">
-                    <param id="0" name="Animation">&quot;NoEyes&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="0" name="Call function" sid="744486859969180" type="Function">
+                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;NoEyes&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="2552241740051866" type="Function">
                     <param id="0" name="Name">&quot;SansText&quot;</param>
@@ -681,6 +672,9 @@
                     <param id="0" name="Which">0</param>
                     <param id="1" name="Speed">0</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="583749619824329" type="PlayerHeart">
+                    <param id="0" name="Opacity">0</param>
+                </action>
                 <action id="0" name="Call function" sid="386576502453621" type="Function">
                     <param id="0" name="Name">&quot;ResetVars&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
@@ -765,6 +759,49 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="291173675734382">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="743761238392784" type="System">
+                    <param id="0" name="Interval (seconds)">0.015</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="745872270248221">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="789818678387770" type="PlayerHeart" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="693084807238622" type="PlayerHeart">
+                            <param id="0" name="Opacity">PlayerHeart.Opacity + 1.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="233207536312926" type="PlayerHeartEffects">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="557049596425891" type="PlayerHeartEffects">
+                            <param id="0" name="Opacity">PlayerHeartEffects.Opacity - 1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="199956339383517" type="PlayerHeartEffects">
+                            <param id="0" name="Instance variable">Scale</param>
+                            <param id="1" name="Value">0.02</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="834269912765486" type="PlayerHeartEffects">
+                            <param id="0" name="Scale">PlayerHeartEffects.Scale</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="692573633940959">
+                    <conditions>
+                        <condition id="-9" inverted="1" name="Is visible" sid="650216839017088" type="PlayerHeart" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="857502305425765" type="PlayerHeartEffects">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="9557576745718824">
             <conditions>
                 <condition id="0" name="On function" sid="863282196169015" type="Function">
@@ -789,6 +826,20 @@
                 </action>
             </actions>
             <sub-events>
+                <event-block sid="738947408127285">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="847199911784354" type="SansLegs">
+                            <param id="0" name="Instance variable">HitAttempts</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">PHASE2START + 2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="629986539371652" type="PlayerHeart">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="886270670661183">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="4939879522821507" type="System">
@@ -2202,7 +2253,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="383705449919107" type="Audio">
-                                            <param id="0" name="Audio file">Phase 2 megalo</param>
+                                            <param id="0" name="Audio file">The End Of All Judgment</param>
                                             <param id="2" name="Loop">1</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
@@ -3150,34 +3201,6 @@
                                         <action id="4" name="Set animation" sid="125211814395040" type="SansTorso">
                                             <param id="0" name="Animation">&quot;Shrug&quot;</param>
                                             <param id="1" name="From">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="933215984201662">
-                                    <conditions>
-                                        <condition id="-1" name="Compare X" sid="256074215586088" type="TargetChoice">
-                                            <param id="0" name="Comparison">4</param>
-                                            <param id="1" name="X co-ordinate">319</param>
-                                        </condition>
-                                        <condition id="-1" name="Compare X" sid="762945087739080" type="TargetChoice">
-                                            <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="X co-ordinate">321</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-27" name="Set effect enabled" sid="370744011949392" type="TargetChoice">
-                                            <param id="0" name="Mode">1</param>
-                                            <param id="1" name="Effect">&quot;Tint&quot;</param>
-                                        </action>
-                                        <action id="-13" name="Set time scale" sid="182782369405292" type="System">
-                                            <param id="0" name="Time scale">0.8</param>
-                                        </action>
-                                        <action id="5" name="Set playback rate" sid="322473402249587" type="Audio">
-                                            <param id="0" name="Tag">&quot;Music&quot;</param>
-                                            <param id="1" name="Playback rate">timescale</param>
-                                        </action>
-                                        <action id="-1" name="Set X" sid="685430235179633" type="TargetChoice">
-                                            <param id="0" name="X">320</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -4401,6 +4424,20 @@
         </event-group>
         <event-group description="" sid="6451037740410459" title="PlayerMovement">
             <sub-events>
+                <event-block sid="961745319746037">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="979318754136148" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="407172580423264" type="PlayerHeartEffects">
+                            <param id="0" name="Object">PlayerHeart</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="474511777686814" type="PlayerHeartEffects">
+                            <param id="0" name="Angle">PlayerHeart.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <variable constant="1" name="HEART_JUMP_STRENGTH" sid="9477825447959367" static="0" type="number">180</variable>
                 <variable constant="1" name="HEART_JUMPHOLD_CUTOFF" sid="7658838381136613" static="0" type="number">30</variable>
                 <variable constant="0" name="HeartSpeed" sid="1915279441809349" static="0" type="number">150</variable>
@@ -4413,6 +4450,52 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="138821606133624">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="127410911300688" type="System">
+                                    <param id="0" name="First value">int(Function.Param(0))</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="899550471403632" type="PlayerHeart">
+                                    <param id="0" name="Instance variable">Mode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">HEARTMODE_BLUE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="749609459865731" type="PlayerHeartEffects">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="793417161956275" type="PlayerHeartEffects">
+                                    <param id="0" name="Instance variable">Scale</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="126967412087308">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="502163008265937" type="System">
+                                    <param id="0" name="First value">int(Function.Param(0))</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="597356825322619" type="PlayerHeart">
+                                    <param id="0" name="Instance variable">Mode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">HEARTMODE_RED</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="677745382613309" type="PlayerHeartEffects">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="341002283760624" type="PlayerHeartEffects">
+                                    <param id="0" name="Instance variable">Scale</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <variable constant="0" name="Mode" sid="7089854117994423" static="0" type="number">0</variable>
                         <event-block sid="9102284570401864">
                             <conditions>
@@ -4456,6 +4539,21 @@
                                     <param id="1" name="Parameter index">2</param>
                                     <param id="2" name="Value">0</param>
                                 </action>
+                                <action id="-28" name="Set effect parameter" sid="874439170542410" type="PlayerHeartEffects">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="706138310638977" type="PlayerHeartEffects">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="936367900568920" type="PlayerHeartEffects">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="7048647250825967">
@@ -4485,6 +4583,21 @@
                                     <param id="2" name="Value">25</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="9069255816298874" type="PlayerHeart">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="647145369695498" type="PlayerHeartEffects">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="149049673311685" type="PlayerHeartEffects">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">25</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="376283632465053" type="PlayerHeartEffects">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">2</param>
                                     <param id="2" name="Value">100</param>
@@ -6394,7 +6507,9 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">STATE_ENTER</param>
                         </condition>
-                        <condition id="-1" name="Every tick" sid="364921197441220" type="System" />
+                        <condition id="-6" name="Every X seconds" sid="999926784705147" type="System">
+                            <param id="0" name="Interval (seconds)">1/60</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-16" name="Set opacity" sid="132962521728384" type="BoneA">
@@ -6457,7 +6572,9 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">STATE_WAIT</param>
                         </condition>
-                        <condition id="-1" name="Every tick" sid="184974201305743" type="System" />
+                        <condition id="-6" name="Every X seconds" sid="974205565318938" type="System">
+                            <param id="0" name="Interval (seconds)">1/60</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-18" name="Rotate clockwise" sid="991317905691852" type="BoneA">
@@ -6497,7 +6614,9 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">STATE_FIRE</param>
                         </condition>
-                        <condition id="-1" name="Every tick" sid="972530673620119" type="System" />
+                        <condition id="-6" name="Every X seconds" sid="875932612570617" type="System">
+                            <param id="0" name="Interval (seconds)">1/60</param>
+                        </condition>
                     </conditions>
                     <actions />
                     <sub-events>
@@ -9094,6 +9213,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <variable constant="0" name="SansExpression" sid="760744357359545" static="1" type="text"></variable>
                 <event-block sid="4010205377286061">
                     <conditions>
                         <condition id="0" name="On function" sid="278655648228976" type="Function">
@@ -9101,11 +9221,1109 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="449277202075253" type="SansHead">
-                            <param id="0" name="Animation">Function.Param(0)</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-9" name="Set value" sid="690494711397839" type="System">
+                            <param id="0" name="Variable">SansExpression</param>
+                            <param id="1" name="Value">Function.Param(0)</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="460397732895515">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="286593620557606" type="System">
+                                    <param id="0" name="First value">Function.Param(0)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;ClosedEyes&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="204014174972331" type="SansHead">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="121972443079203" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="923718052620147" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="108979128696670" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="327518314764889" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="175220428969284" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="194256024713424" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="727461314796005" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="190462634277771" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="813495470059970" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="518380422540249" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="169805552656206" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="533255387401747" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="562254317336934" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="624854855153883" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="764646925335250" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="965171696043977" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="169807292602699">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="417985423945770" type="System" />
+                                <condition id="-8" name="Compare two values" sid="596695734649257" type="System">
+                                    <param id="0" name="First value">Function.Param(0)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Wink&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="215000841117167" type="SansHead">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="684715328235930" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="535179949357595" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="287221246054290" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="142815586699131" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="237857383802393" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="212346345917230" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="717364588921654" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="360842382042439" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="370317765077839" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="246397533696601" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="937882022917733" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="116509530145009">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="675963268110904" type="System" />
+                                <condition id="-8" name="Compare two values" sid="846641509438452" type="System">
+                                    <param id="0" name="First value">Function.Param(0)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;LookLeft&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="618926856330603" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="659431555739891" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="516236669383273" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="127704101111616" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="888914493748397" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="319190405726577" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="855613404445799" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="462916045548507" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="930186623927241" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="484591550228844" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="293513496588330" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="288114311609195" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="999993244127926" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="903635619970539" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="900608626244538" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="770769886055352" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="330955852669575" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="505477406941995" type="SansHead">
+                                    <param id="0" name="Animation">SansExpression</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="884687711817784" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="144686695084919" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="434254923591548" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="890417155195585" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="500575480929165" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="486416417618444" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="163559973462879" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="135441691410829" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="633853162823355" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="154652384945994" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="101026262785453" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="315458891954611" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="292627232951593" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="977926913730923" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="402399845804884" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="134791791188685" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="850625892600995">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="310207760655039" type="System" />
+                                <condition id="-8" name="Compare two values" sid="620037901313657" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;LookLeft&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="961641340028043" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="138230596640896" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="542520225534365" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="804293214856928" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="710493906499285" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="818621944168029" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="558964498602534" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="807228239626509" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="993661303225647" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="795368355818499" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="630480251772990" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="680863521422480" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="316088603853559" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="150831642435185" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="800490675590175" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="469201770253371" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame - 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="828112974951045" type="System">
+                                    <param id="0" name="Seconds">0.15</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="833936065660436" type="SansHead">
+                                    <param id="0" name="Animation">SansExpression</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="413480658028202" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="763123042779269" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="115924524085444" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="913576937133800" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="188402915711653" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="657165528462255" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="616720628441647" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="713133792202648" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="908362090234791" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="421579438198679" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="196143284723024" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="963537550593409" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="499406159075808" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="119740118123828" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="169029332631540" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="639107542353964" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="179954130774729">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="383820787956867" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="865180485563946" type="SansHead">
+                                    <param id="0" name="Animation">SansExpression</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="646912634056251" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="336755937688551" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="339545001708376" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="514852091741477" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="230570362837551" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="577559017565987" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="482553648226201" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="386990157895286" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="781018871937842" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="635350567622118" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="798722161483643" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="950740193451584" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="323867064067746" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="856164013793134" type="Eyelid2">
+                                    <param id="0" name="Frame number">Eyelid2.AnimationFrame + 1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="455141819692874" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="409371509952383" type="Eyelid1">
+                                    <param id="0" name="Frame number">Eyelid1.AnimationFrame + 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="701858049914264">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="734556305738747" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="480612375909689" type="SansEye2">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="501782266635320">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="685691382396524" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Default&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="415062535688350" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="796152766242279" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Half&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="677737848265863" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="159230227749207" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="269208023652156">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="358223304001022" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NoEyes&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="491058465546559" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity - 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="246320242342381" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity - 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="620055929990958">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="553126761326927" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;LookLeft&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="893943821875020" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="302895187254280" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Half&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="495916305685048" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="312990191135669" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="963496616510409">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="762540497079869" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Wink&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="170055882615132" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;None&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="221886908978777" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Half&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="617961821976542" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="608330990063603" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="182282015670519">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="549051537935306" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;ClosedEyes&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="225705880256989" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;None&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="174856489551380" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;None&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="664865093974943" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="906662890431958" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="806560879336275">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="315549357430656" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;BlueEye&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="895931205624107" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Glow&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="522598634853996" type="SansEye2">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="907077665577005" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity - 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="225725878043991" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <variable constant="0" name="Red" sid="759199068903631" static="1" type="number">64</variable>
+                                <variable constant="0" name="Green" sid="534925316901339" static="1" type="number">255</variable>
+                                <variable constant="0" name="Blue" sid="279911968364324" static="1" type="number">255</variable>
+                                <variable constant="0" name="Wait" sid="629559021809381" static="1" type="number">60</variable>
+                                <variable constant="0" name="ChangeColor" sid="288931944880284" static="1" type="number">1</variable>
+                                <event-block sid="959642547075190">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="268767386644981" type="System">
+                                            <param id="0" name="Variable">ChangeColor</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="285833295507492" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">Red</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="179006689646759" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">Green</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="411635691341573" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">Blue</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="814046943437472">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="792153345501462" type="System">
+                                                    <param id="0" name="Variable">Red</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">64</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="403237340303929" type="System">
+                                                    <param id="0" name="Variable">Red</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="948543487910961">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="202282628662904" type="System">
+                                                    <param id="0" name="Variable">Blue</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">255</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="169671691284094" type="System">
+                                                    <param id="0" name="Variable">Blue</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="604793371237162">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="100945339111037" type="System">
+                                                    <param id="0" name="Variable">Red</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">64</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="987711834534835" type="System">
+                                                    <param id="0" name="Variable">Blue</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">255</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="971418209189673" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="584074310442420">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="296544038448073" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="341780657806755" type="System">
+                                                    <param id="0" name="Variable">ChangeColor</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="874877598174693" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="205668480208724">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="326824267662266" type="System">
+                                            <param id="0" name="Variable">ChangeColor</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="442127969323293" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">Red</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="426477570864523" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">Green</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="160045759113367" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">Blue</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="370166122874805">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="770318625078706" type="System">
+                                                    <param id="0" name="Variable">Red</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">255</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="753545918892257" type="System">
+                                                    <param id="0" name="Variable">Red</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="359752043907775">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="612420221567992" type="System">
+                                                    <param id="0" name="Variable">Blue</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">64</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="458723096968160" type="System">
+                                                    <param id="0" name="Variable">Blue</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="733190364141581">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="872330474433787" type="System">
+                                                    <param id="0" name="Variable">Red</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">255</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="668685307076534" type="System">
+                                                    <param id="0" name="Variable">Blue</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">64</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="599563691658308" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="487428571156741">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="182198219323456" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="278480820426706" type="System">
+                                                    <param id="0" name="Variable">ChangeColor</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="856391732042327" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="679953246873073">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="307875463079192" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Tired1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="185786361221510" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="862631782698975" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Half&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="289186338385919" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="330221039568975" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="190852804466692">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="157697974259250" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Tired2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="582781001758588" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="138977310589705" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Half&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="852573841419563" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="757691537961772" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="668328105383681">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="534787917506888" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Tired3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="141893591424550" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;Flat&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="901363847655415" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Flat&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="487274231175731" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="255656308203898" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="300035703961774">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="812742162448281" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;GoneMad&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="550647849602380" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity - 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="112570016411831" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity - 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="776598909022352">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="531728325147044" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;GoneMadOrangeEye&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="795096369261783" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Glow&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="383026879224138" type="SansEye2">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Tint&quot;</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="622483897160303" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity - 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="617999266287533" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="144468651963712">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="260704716499039" type="System">
+                                            <param id="0" name="First value">SansHead.AnimationName</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;GoneMad&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="869442162323801" type="SansEye1">
+                                            <param id="0" name="Animation">&quot;None&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="643951279398356" type="SansEye2">
+                                            <param id="0" name="Animation">&quot;None&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <variable constant="0" name="Red" sid="947967660723480" static="1" type="number">255</variable>
+                                <variable constant="0" name="Green" sid="420030766386162" static="1" type="number">255</variable>
+                                <variable constant="0" name="Blue" sid="506926221343105" static="1" type="number">64</variable>
+                                <variable constant="0" name="Wait" sid="171191674704441" static="1" type="number">60</variable>
+                                <variable constant="0" name="ChangeColor" sid="555315197338997" static="1" type="number">1</variable>
+                                <event-block sid="948041035762074">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="512850752062010" type="System">
+                                            <param id="0" name="Variable">ChangeColor</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="282406783831826" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">Red</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="649294646048467" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">Green</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="998363306942682" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">Blue</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="338888569647701">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="202644779010839" type="System">
+                                                    <param id="0" name="Variable">Green</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">255</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="725881250953209" type="System">
+                                                    <param id="0" name="Variable">Green</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="158643065131487">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="597162378150862" type="System">
+                                                    <param id="0" name="Variable">Green</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">255</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="346379937759861" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="866049488466318">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="461470248920915" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="510089605123072" type="System">
+                                                    <param id="0" name="Variable">ChangeColor</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="859911782564764" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="834872549831505">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="394083132444673" type="System">
+                                            <param id="0" name="Variable">ChangeColor</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="623959259557058" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">Red</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="640845537094577" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">Green</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="395789701754237" type="SansEye2">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">Blue</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="315759511018165">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="886556465888817" type="System">
+                                                    <param id="0" name="Variable">Green</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">64</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="523880900934607" type="System">
+                                                    <param id="0" name="Variable">Green</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="349136579816442">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="909794847798045" type="System">
+                                                    <param id="0" name="Variable">Green</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">64</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="190674460469793" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="617874853534357">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="876799040208950" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="482899099294915" type="System">
+                                                    <param id="0" name="Variable">ChangeColor</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="566204961052346" type="System">
+                                                    <param id="0" name="Variable">Wait</param>
+                                                    <param id="1" name="Value">60</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="481954906461137">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="231832781024743" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NoCare&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="183614142001003" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity - 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="354184861632745" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity - 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="123981867390192">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="524903399619500" type="System">
+                                    <param id="0" name="First value">SansHead.AnimationName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Shock&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="959889918655926" type="SansEye1">
+                                    <param id="0" name="Animation">&quot;Small&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="225383409916362" type="SansEye2">
+                                    <param id="0" name="Animation">&quot;Small&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="347350447084818" type="SansEye1">
+                                    <param id="0" name="Opacity">SansEye1.Opacity + 5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="245335246947927" type="SansEye2">
+                                    <param id="0" name="Opacity">SansEye2.Opacity + 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="7722442491544848">
                     <conditions>
@@ -9765,115 +10983,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="7173198106602578">
-                    <conditions>
-                        <condition id="2" name="Is playing" sid="161883942822972" type="SansHead">
-                            <param id="0" name="Animation">&quot;BlueEye&quot;</param>
-                        </condition>
-                        <condition id="-6" name="Every X seconds" sid="933204714743161" type="System">
-                            <param id="0" name="Interval (seconds)">1/30</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="3406173047554672" type="SansHead" />
-                    </actions>
-                    <sub-events>
-                        <event-block sid="532965834909271">
-                            <conditions>
-                                <condition id="3" name="Compare frame" sid="557824709227077" type="SansHead">
-                                    <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Number">9</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="956171232943481" type="SansHead">
-                                    <param id="0" name="Frame number">sanshead.AnimationFrame +1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="915908218917514">
-                            <conditions>
-                                <condition id="3" name="Compare frame" sid="451763998880049" type="SansHead">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">9</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="644466022794338" type="SansHead">
-                                    <param id="0" name="Frame number">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="658382275764190">
-                    <conditions>
-                        <condition id="2" name="Is playing" sid="481959144452596" type="SansHead">
-                            <param id="0" name="Animation">&quot;GoneMadOrangeEye&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="955178945410509" type="SansHead" />
-                    </actions>
-                    <sub-events>
-                        <event-block sid="663683199679637">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="562225949120639" type="System">
-                                    <param id="0" name="Interval (seconds)">1/30</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="873086763924568" type="SansHead">
-                                    <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="125153256657154">
-                                    <conditions>
-                                        <condition id="3" name="Compare frame" sid="527896730028823" type="SansHead">
-                                            <param id="0" name="Comparison">2</param>
-                                            <param id="1" name="Number">7</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="186446308372960" type="SansHead">
-                                            <param id="0" name="Frame number">sanshead.AnimationFrame +1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="265222164361612">
-                                    <conditions>
-                                        <condition id="3" name="Compare frame" sid="263346903960430" type="SansHead">
-                                            <param id="0" name="Comparison">0</param>
-                                            <param id="1" name="Number">7</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="882709932484620" type="SansHead">
-                                            <param id="0" name="Frame number">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="608176642485735">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="202949880115572" type="System">
-                                    <param id="0" name="Interval (seconds)">13/30</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="480977374096745" type="SansHead">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="162251938739696" type="SansHead">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
                 <event-block sid="7288411895393404">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="5385421716260042" type="System" />
@@ -9928,7 +11037,38 @@
                             <param id="0" name="Object">SansHead</param>
                             <param id="1" name="Image point (optional)">&quot;Sweat&quot;</param>
                         </action>
+                        <action id="-4" name="Set position to another object" sid="260297260372612" type="SansEye1">
+                            <param id="0" name="Object">SansHead</param>
+                            <param id="1" name="Image point (optional)">&quot;Eye1&quot;</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="349889246703270" type="SansEye2">
+                            <param id="0" name="Object">SansHead</param>
+                            <param id="1" name="Image point (optional)">&quot;Eye2&quot;</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="136841561696958" type="Eyelid1">
+                            <param id="0" name="Object">SansHead</param>
+                            <param id="1" name="Image point (optional)">&quot;Eye1&quot;</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="437214004992774" type="Eyelid2">
+                            <param id="0" name="Object">SansHead</param>
+                            <param id="1" name="Image point (optional)">&quot;Eye2&quot;</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="135248702475514">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="195241941495924" type="SansHead">
+                                    <param id="0" name="Animation">&quot;LookLeft&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="170491697414364" type="Eyelid1">
+                                    <param id="0" name="Object">SansHead</param>
+                                    <param id="1" name="Image point (optional)">&quot;Eyelid&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -12267,14 +13407,15 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="299086627817951" type="System">
-                                    <param id="0" name="Seconds">2</param>
+                                    <param id="0" name="Seconds">1</param>
                                 </action>
-                                <action id="6" name="Stop" sid="573206232087339" type="Audio">
-                                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                                <action id="0" name="Call function" sid="820095818465874" type="Function">
+                                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Wink&quot;</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="820095818465874" type="SansHead">
-                                    <param id="0" name="Animation">&quot;NoEyes&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="0" name="Call function" sid="403066429396657" type="Function">
+                                    <param id="0" name="Name">&quot;SansTorso&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Default&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="270324204820573" type="Function">
                                     <param id="0" name="Name">&quot;endsanstext&quot;</param>
@@ -12341,7 +13482,10 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="488964544207165" type="System">
-                                    <param id="0" name="Seconds">3</param>
+                                    <param id="0" name="Seconds">2.5</param>
+                                </action>
+                                <action id="6" name="Stop" sid="629301481538064" type="Audio">
+                                    <param id="0" name="Tag">&quot;Music&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="893500343357997" type="Function">
                                     <param id="0" name="Name">&quot;BlackScreen&quot;</param>
@@ -12478,6 +13622,113 @@
                                     <param id="0" name="Instance variable">DodgeTimer</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="623209327259355">
+                    <conditions>
+                        <condition id="0" name="On function" sid="936897324588020" type="Function">
+                            <param id="0" name="Name">&quot;Warning&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="235396266175532" type="System">
+                            <param id="0" name="Object to create">Warning</param>
+                            <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="398463920176607" type="Warning">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="460554612052364" type="Warning">
+                            <param id="0" name="X">int(Function.Param(0))</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="934640175041674" type="Warning">
+                            <param id="0" name="Y">int(Function.Param(1))</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="822201267069863" type="Warning">
+                            <param id="0" name="Scale">Function.Param(2)</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="187406552672216" type="Warning">
+                            <param id="0" name="Instance variable">Duration</param>
+                            <param id="1" name="Value">Function.Param(3)</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="110499036354480" type="Warning">
+                            <param id="0" name="Instance variable">Color</param>
+                            <param id="1" name="Value">int(Function.Param(4))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="504748512737075">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="419127775120985" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="168872862206106" type="Warning">
+                            <param id="0" name="Instance variable">Duration</param>
+                            <param id="1" name="Value">min(dt, Warning.Duration)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="478545777128130">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="661995406461317" type="Warning">
+                                    <param id="0" name="Instance variable">Color</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-6" name="Every X seconds" sid="934061629186672" type="System">
+                                    <param id="0" name="Interval (seconds)">2/30</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="455403812214571" type="Warning">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">255</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="817780334451428" type="Warning">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">253</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="446165471420722" type="Warning">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">117</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="468317262275718" type="System">
+                                    <param id="0" name="Seconds">1/30</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="229368604379747" type="Warning">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">255</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="863499237864322" type="Warning">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">82</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="310538561778641" type="Warning">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">62</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="651191259043072">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="512275109261352" type="Warning">
+                                    <param id="0" name="Instance variable">Duration</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="736419356676122" type="Warning" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -12666,9 +13917,9 @@
                                                 <action id="-16" name="Wait" sid="883950273777369" type="System">
                                                     <param id="0" name="Seconds">0.2</param>
                                                 </action>
-                                                <action id="4" name="Set animation" sid="409501367582318" type="SansHead">
-                                                    <param id="0" name="Animation">&quot;LookLeft&quot;</param>
-                                                    <param id="1" name="From">1</param>
+                                                <action id="0" name="Call function" sid="409501367582318" type="Function">
+                                                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;LookLeft&quot;</param>
                                                 </action>
                                                 <action id="0" name="Call function" sid="862329911564650" type="Function">
                                                     <param id="0" name="Name">&quot;SansText&quot;</param>
@@ -13593,7 +14844,7 @@
                                             <actions>
                                                 <action id="0" name="Call function" sid="637349763694262" type="Function">
                                                     <param id="0" name="Name">&quot;SansText&quot;</param>
-                                                    <param id="1" name="Parameter {n}">&quot;im not going to go easy&quot; &amp; newline &amp; &quot;on you now.&quot;{###}&quot;Dialogue&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;i&apos;m not going to go easy&quot; &amp; newline &amp; &quot;on you now.&quot;{###}&quot;Dialogue&quot;</param>
                                                 </action>
                                                 <action id="-10" name="Add to" sid="217679707573704" type="System">
                                                     <param id="0" name="Variable">DialogueNumber</param>
@@ -13795,9 +15046,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="4" name="Set animation" sid="454946286601250" type="SansHead">
-                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                                    <param id="1" name="From">1</param>
+                                                <action id="0" name="Call function" sid="454946286601250" type="Function">
+                                                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;Default&quot;</param>
                                                 </action>
                                                 <action id="0" name="Call function" sid="344381963437440" type="Function">
                                                     <param id="0" name="Name">&quot;StartAttack&quot;</param>
@@ -13818,9 +15069,9 @@
                                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                                     <param id="1" name="From">1</param>
                                                 </action>
-                                                <action id="4" name="Set animation" sid="113437982477111" type="SansHead">
-                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                                    <param id="1" name="From">1</param>
+                                                <action id="0" name="Call function" sid="864845067474445" type="Function">
+                                                    <param id="0" name="Name">&quot;SansHead&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;Default&quot;</param>
                                                 </action>
                                                 <action id="0" name="Call function" sid="704607090193295" type="Function">
                                                     <param id="0" name="Name">&quot;StartAttack&quot;</param>

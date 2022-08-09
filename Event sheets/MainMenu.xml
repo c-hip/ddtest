@@ -157,7 +157,7 @@
                         </action>
                         <action id="0" name="Call function" sid="516406951993025" type="Function">
                             <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                            <param id="1" name="Parameter {n}">0{###}192{###}224{###}4{###}&quot;Test attack&quot;{###}&quot;MenuModeCustom&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}224{###}4{###}&quot;Custom attack&quot;{###}&quot;MenuModeCustom&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="854715475071133" type="Function">
                             <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
@@ -333,25 +333,6 @@
                         <action id="7" name="Set horizontal alignment" sid="523362474914401" type="DefaultFont">
                             <param id="0" name="Horizontal alignment">0</param>
                         </action>
-                        <action id="-3" name="Create object" sid="133893961089792" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">10</param>
-                            <param id="3" name="Y">310</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="281734327734071" type="DefaultFont">
-                            <param id="0" name="Width">512</param>
-                            <param id="1" name="Height">96</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="874594468301137" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="956564182666779" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Golden Strike - When hitting in the middle you slow down time by 20% for the rest of the attack&quot;</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="191641275792540" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">0</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="958503966123996">
@@ -493,7 +474,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="224716621111710" type="MenuItem">
                             <param id="0" name="Instance variable">Text</param>
-                            <param id="1" name="Value">&quot;This engine by Jcw87&quot;</param>
+                            <param id="1" name="Value">&quot;Bad Time Simulator by Jcw87&quot;</param>
                         </action>
                         <action id="-10" name="Set value" sid="664175591778507" type="MenuItem">
                             <param id="0" name="Instance variable">Action</param>
@@ -546,7 +527,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="795885368226227" type="MenuItem">
                             <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Value">2</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="463961257602321" type="MenuItem">
                             <param id="0" name="Instance variable">Text</param>
@@ -583,11 +564,11 @@
                         </action>
                         <action id="-10" name="Set value" sid="911645722468941" type="MenuItem">
                             <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Value">0</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-10" name="Set value" sid="337938237364841" type="MenuItem">
                             <param id="0" name="Instance variable">Text</param>
-                            <param id="1" name="Value">&quot;Phase 2 Music by Case&quot;</param>
+                            <param id="1" name="Value">&quot;The End Of All Judgment by Case&quot;</param>
                         </action>
                         <action id="-10" name="Set value" sid="313545704786687" type="MenuItem">
                             <param id="0" name="Instance variable">Action</param>
@@ -644,7 +625,7 @@
                             <param id="0" name="Scale">2</param>
                         </action>
                         <action id="0" name="Set text" sid="240210012122328" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Coder/Owner - Fredo&quot;</param>
+                            <param id="0" name="Text">&quot;Made by Fredo&quot;</param>
                         </action>
                         <action id="7" name="Set horizontal alignment" sid="331401220920760" type="DefaultFont">
                             <param id="0" name="Horizontal alignment">1</param>
@@ -663,7 +644,7 @@
                             <param id="0" name="Scale">2</param>
                         </action>
                         <action id="0" name="Set text" sid="941544535709211" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Artist - JustLuke&quot;</param>
+                            <param id="0" name="Text">&quot;Art by JustLuke&quot;</param>
                         </action>
                         <action id="7" name="Set horizontal alignment" sid="287821624178829" type="DefaultFont">
                             <param id="0" name="Horizontal alignment">1</param>
@@ -699,32 +680,11 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="572147541691421">
-                            <conditions>
-                                <condition id="-2" name="Compare Y" sid="606294363975978" type="PlayerHeart">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Y co-ordinate">152</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="964387563292040" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="8" name="Open URL in new window" sid="222269758296605" type="Browser">
-                                    <param id="0" name="URL">&quot;https://soundcloud.com/oofkey/sans-undertale-barricaded-the-end-of-all-judgement&quot;</param>
-                                    <param id="1" name="Tag">&quot;Credits&quot;</param>
-                                </action>
-                                <action id="0" name="Call function" sid="675135974286028" type="Function">
-                                    <param id="0" name="Name">&quot;CreditMusic&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="858182054097825">
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="426047046248236" type="PlayerHeart">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Y co-ordinate">186</param>
+                                    <param id="1" name="Y co-ordinate">152</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -736,6 +696,27 @@
                                     <param id="1" name="Tag">&quot;Credits&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="499424415221525" type="Function">
+                                    <param id="0" name="Name">&quot;CreditMusic&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="572147541691421">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="606294363975978" type="PlayerHeart">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Y co-ordinate">186</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="964387563292040" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="8" name="Open URL in new window" sid="222269758296605" type="Browser">
+                                    <param id="0" name="URL">&quot;https://soundcloud.com/oofkey/sans-undertale-barricaded-the-end-of-all-judgement&quot;</param>
+                                    <param id="1" name="Tag">&quot;Credits&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="675135974286028" type="Function">
                                     <param id="0" name="Name">&quot;CreditMusic&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
@@ -2128,7 +2109,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="908362213075170" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;The Start of Bad Time&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;Start&quot;{###}&quot;MenuSingleAttack&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="236621501690646" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
@@ -2156,7 +2137,7 @@
                                 </action>
                                 <action id="0" name="Call function" sid="740842659333173" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}320{###}7{###}&quot;The Start of a Worse Time&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}320{###}7{###}&quot;Start 2&quot;{###}&quot;MenuSingleAttack&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="835358924610118" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
@@ -2164,19 +2145,23 @@
                                 </action>
                                 <action id="0" name="Call function" sid="238841723001077" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}384{###}9{###}&quot;Bones and Platforms&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}384{###}9{###}&quot;Platforms&quot;{###}&quot;MenuSingleAttack&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="904663139144776" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}416{###}10{###}&quot;Hell of Judgment&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}416{###}10{###}&quot;Multi Attack&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="196214595339134" type="Function">
+                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}448{###}11{###}&quot;Bone Chaos&quot;{###}&quot;MenuSingleAttack&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="992270735736252" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}448{###}11{###}&quot;Heal Attack&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}480{###}12{###}&quot;Heal Attack&quot;{###}&quot;MenuSingleAttack&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="743804618256727" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}480{###}12{###}&quot;Heal Attack 2&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}512{###}13{###}&quot;Heal Attack 2&quot;{###}&quot;MenuSingleAttack&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2284,7 +2269,7 @@
                             <param id="0" name="Scale">2</param>
                         </action>
                         <action id="0" name="Set text" sid="63601467630781" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Test attack&quot;</param>
+                            <param id="0" name="Text">&quot;Custom attack&quot;</param>
                         </action>
                         <action id="7" name="Set horizontal alignment" sid="641170030262494" type="DefaultFont">
                             <param id="0" name="Horizontal alignment">1</param>

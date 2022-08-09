@@ -49,6 +49,7 @@
 0,bonehrepeat,229,216,45,1,240,140,15
 0,bonehrepeat,369,356,45,3,240,140,15
 0.36666,SET,gt,36,,,,,,
+0,SET,gt2,27,,,,,,
 0,MUL,Ang,$gt,-10,,,,,
 0,COS,X,$Ang,,,,,,
 0,SIN,Y,$Ang,,,,,,
@@ -61,12 +62,12 @@
 0,ADD,EndX,$EndX,320,,,,,
 0,ADD,EndY,$EndY,306,,,,,
 0,ADD,Ang,$Ang,180,,,,,
-0,GasterBlaster,0,$X,$Y,$EndX,$EndY,$Ang,0.5,0,2
-0,MUL,Ang,$gt,10,,,,,
+0,GasterBlaster,0,$X,$Y,$EndX,$EndY,$Ang,0.5,0,0
+0,MUL,Ang,$gt2,-10,,,,,
 0,COS,X,$Ang,,,,,,
 0,SIN,Y,$Ang,,,,,,
-0,MUL,EndX,$X,250,,,,,
-0,MUL,EndY,$Y,250,,,,,
+0,MUL,EndX,$X,350,,,,,
+0,MUL,EndY,$Y,350,,,,,
 0,MUL,X,$EndX,3,,,,,
 0,MUL,Y,$EndY,3,,,,,
 0,ADD,X,$X,320,,,,,
@@ -74,9 +75,10 @@
 0,ADD,EndX,$EndX,320,,,,,
 0,ADD,EndY,$EndY,306,,,,,
 0,ADD,Ang,$Ang,180,,,,,
-0,Gasterblaster,0,$X,$Y,$EndX,$EndY,$Ang,0.5,0,1
+0,Gasterblaster,0,$X,$Y,$EndX,$EndY,$Ang,0.5,0,0
 0,ADD,gt,$gt,1.5,,,,,
-0.06666,JMPRELL,-27,$gt,220,,,,,
+0,ADD,gt2,$gt2,1.5,,,,,
+0.06666,JMPRELL,-28,$gt,220,,,,,
 0.4,Set,Loop,15
 0,Set,Delay,0.266
 0,Set,Blast,0.1666
