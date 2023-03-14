@@ -78,6 +78,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                         <Ang>0</Ang>
                         <EndX>0</EndX>
                         <EndY>0</EndY>
@@ -119,6 +120,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                         <BlastTime>0</BlastTime>
                         <Timer>0</Timer>
                         <BaseSize>0</BaseSize>
@@ -157,6 +159,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -191,6 +194,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -225,6 +229,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -269,6 +274,7 @@
                         <Direction>0</Direction>
                         <Speed>0</Speed>
                         <Reverse>false</Reverse>
+                        <Name></Name>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Jumpthru">
@@ -323,6 +329,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -362,6 +369,7 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <Name></Name>
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
@@ -404,6 +412,7 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <Name></Name>
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
@@ -548,9 +557,9 @@
                     <effect-instances>
                         <effect-instance type="Tint">
                             <parameters>
-                                <blue>1</blue>
-                                <green>1</green>
-                                <red>1</red>
+                                <blue>0.47</blue>
+                                <green>0.47</green>
+                                <red>1.43</red>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -975,6 +984,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                         <Timer>0</Timer>
                         <Destroy>false</Destroy>
                     </instance-variables>
@@ -1013,6 +1023,7 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                         <State>0</State>
                         <Button>0</Button>
                     </instance-variables>
@@ -1150,11 +1161,14 @@
                         <Damage>0</Damage>
                         <Karma>0</Karma>
                         <Color>0</Color>
+                        <Name></Name>
                         <Speed>0</Speed>
                         <Delay>0</Delay>
                         <State>0</State>
                         <Direction>0</Direction>
                         <Timer>0</Timer>
+                        <Slowdown>24</Slowdown>
+                        <InitialDelay>0</InitialDelay>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">

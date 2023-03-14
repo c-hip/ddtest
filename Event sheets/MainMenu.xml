@@ -11,6 +11,7 @@
         <variable constant="0" name="PhaseSelect" sid="345419778356496" static="0" type="number">0</variable>
         <variable constant="0" name="InstantDeath" sid="192300545486393" static="0" type="number">0</variable>
         <variable constant="0" name="Mute_Music" sid="413545279834873" static="0" type="number">0</variable>
+        <variable constant="0" name="Dev_Mode" sid="531878383243575" static="0" type="number">0</variable>
         <include>InputManagement</include>
         <include>Fonts</include>
         <include>RPGText</include>
@@ -217,120 +218,6 @@
                             <param id="0" name="Text">&quot;When in battle, pressing C returns you back to the menu&quot;</param>
                         </action>
                         <action id="7" name="Set horizontal alignment" sid="720595232491870" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">0</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="723760785824847" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">10</param>
-                            <param id="3" name="Y">130</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="843529398654738" type="DefaultFont">
-                            <param id="0" name="Width">512</param>
-                            <param id="1" name="Height">96</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="741735451958581" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="649735984200604" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Instant Death - Removes the soul shattering animation so you get to try again faster&quot;</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="198359050687624" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">0</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="331855079958587" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">10</param>
-                            <param id="3" name="Y">170</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="629112042742136" type="DefaultFont">
-                            <param id="0" name="Width">512</param>
-                            <param id="1" name="Height">96</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="985703136448333" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="567907584789751" type="DefaultFont">
-                            <param id="0" name="Text">&quot;No-Hit - You have 1 HP&quot;</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="331968613093304" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">0</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="476944756150167" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">10</param>
-                            <param id="3" name="Y">190</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="838180237820523" type="DefaultFont">
-                            <param id="0" name="Width">512</param>
-                            <param id="1" name="Height">96</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="419246145995595" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="330119212220694" type="DefaultFont">
-                            <param id="0" name="Text">&quot;No Death - You won&apos;t die when your HP is 0&quot;</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="485474945316889" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">0</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="598015806889923" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">10</param>
-                            <param id="3" name="Y">210</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="832179585430659" type="DefaultFont">
-                            <param id="0" name="Width">512</param>
-                            <param id="1" name="Height">96</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="127758958212084" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="178900140245932" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Heal in phase transition - When entering a new phase you get your items back and heal to full hp&quot;</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="727790967517841" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">0</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="610894887380638" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">10</param>
-                            <param id="3" name="Y">250</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="691795161868899" type="DefaultFont">
-                            <param id="0" name="Width">512</param>
-                            <param id="1" name="Height">96</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="605924046910189" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="761768645066472" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Auto Retry - You automatically retry after dying (Press C to get back to the main menu)&quot;</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="574795583379936" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">0</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="333379257069641" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">10</param>
-                            <param id="3" name="Y">290</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="758943941389666" type="DefaultFont">
-                            <param id="0" name="Width">512</param>
-                            <param id="1" name="Height">96</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="108248064641341" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="707233490720143" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Invisible HP - You cannot see your HP&quot;</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="523362474914401" type="DefaultFont">
                             <param id="0" name="Horizontal alignment">0</param>
                         </action>
                     </actions>
@@ -644,7 +531,7 @@
                             <param id="0" name="Scale">2</param>
                         </action>
                         <action id="0" name="Set text" sid="941544535709211" type="DefaultFont">
-                            <param id="0" name="Text">&quot;Art by JustLuke&quot;</param>
+                            <param id="0" name="Text">&quot;Sans Sprites by JustLuke&quot;</param>
                         </action>
                         <action id="7" name="Set horizontal alignment" sid="287821624178829" type="DefaultFont">
                             <param id="0" name="Horizontal alignment">1</param>
@@ -659,32 +546,12 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="201476151697504">
-                            <conditions>
-                                <condition id="-2" name="Compare Y" sid="930730294677522" type="PlayerHeart">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Y co-ordinate">88</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="361627365965673" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="8" name="Open URL in new window" sid="570129126829899" type="Browser">
-                                    <param id="0" name="URL">&quot;https://youtu.be/PEf4-Ejn2-Y&quot;</param>
-                                    <param id="1" name="Tag">&quot;Credits&quot;</param>
-                                </action>
-                                <action id="0" name="Call function" sid="197249410929594" type="Function">
-                                    <param id="0" name="Name">&quot;CreditMusic&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="858182054097825">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="426047046248236" type="PlayerHeart">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Y co-ordinate">152</param>
+                                <condition id="0" name="Compare at X" sid="396383285395031" type="MenuStack">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -695,17 +562,19 @@
                                     <param id="0" name="URL">&quot;https://soundcloud.com/dividejams/hard-mode-v3&quot;</param>
                                     <param id="1" name="Tag">&quot;Credits&quot;</param>
                                 </action>
-                                <action id="0" name="Call function" sid="499424415221525" type="Function">
-                                    <param id="0" name="Name">&quot;CreditMusic&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                <action id="1" name="Set size" sid="149286051178458" type="MenuStack">
+                                    <param id="0" name="Width">3</param>
+                                    <param id="1" name="Height">2</param>
+                                    <param id="2" name="Depth">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="572147541691421">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="606294363975978" type="PlayerHeart">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Y co-ordinate">186</param>
+                                <condition id="0" name="Compare at X" sid="727457303645580" type="MenuStack">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -716,17 +585,19 @@
                                     <param id="0" name="URL">&quot;https://soundcloud.com/oofkey/sans-undertale-barricaded-the-end-of-all-judgement&quot;</param>
                                     <param id="1" name="Tag">&quot;Credits&quot;</param>
                                 </action>
-                                <action id="0" name="Call function" sid="675135974286028" type="Function">
-                                    <param id="0" name="Name">&quot;CreditMusic&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                <action id="1" name="Set size" sid="100857227931716" type="MenuStack">
+                                    <param id="0" name="Width">3</param>
+                                    <param id="1" name="Height">2</param>
+                                    <param id="2" name="Depth">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="809520293447237">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="873274290760966" type="PlayerHeart">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Y co-ordinate">254</param>
+                                <condition id="0" name="Compare at X" sid="565815041773844" type="MenuStack">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -737,17 +608,19 @@
                                     <param id="0" name="URL">&quot;https://undertale.com/&quot;</param>
                                     <param id="1" name="Tag">&quot;Credits&quot;</param>
                                 </action>
-                                <action id="0" name="Call function" sid="722567157891133" type="Function">
-                                    <param id="0" name="Name">&quot;MenuCredits&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                <action id="1" name="Set size" sid="458702140821876" type="MenuStack">
+                                    <param id="0" name="Width">2</param>
+                                    <param id="1" name="Height">2</param>
+                                    <param id="2" name="Depth">1</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="985998702256294">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="173797048173479" type="PlayerHeart">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Y co-ordinate">288</param>
+                                <condition id="0" name="Compare at X" sid="715131353406646" type="MenuStack">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -758,9 +631,10 @@
                                     <param id="0" name="URL">&quot;https://github.com/Jcw87/c2-sans-fight&quot;</param>
                                     <param id="1" name="Tag">&quot;Credits&quot;</param>
                                 </action>
-                                <action id="0" name="Call function" sid="291404238807773" type="Function">
-                                    <param id="0" name="Name">&quot;MenuCredits&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                <action id="1" name="Set size" sid="898201201823563" type="MenuStack">
+                                    <param id="0" name="Width">2</param>
+                                    <param id="1" name="Height">2</param>
+                                    <param id="2" name="Depth">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1177,6 +1051,187 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="526089199327761">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="221445382417355" type="System">
+                                    <param id="0" name="Variable">Dev_Mode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="530814222737384" type="Function">
+                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}224{###}4{###}&quot;Dev Mode&quot;{###}&quot;Dev Mode On&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="111136214235915">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="405226648840330" type="System">
+                                    <param id="0" name="Variable">Dev_Mode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="710809828660340" type="System">
+                                    <param id="0" name="Object to create">MenuItem</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">192</param>
+                                    <param id="3" name="Y">224</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="470629776103755" type="MenuItem">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="924132887257644" type="MenuItem">
+                                    <param id="0" name="Instance variable">Text</param>
+                                    <param id="1" name="Value">&quot;Dev Mode&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="969508633638228" type="MenuItem">
+                                    <param id="0" name="Instance variable">Action</param>
+                                    <param id="1" name="Value">&quot;Dev Mode Off&quot;</param>
+                                </action>
+                                <action id="1" name="Set return value" sid="751183284694278" type="Function">
+                                    <param id="0" name="Value">MenuItem.UID</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="442255726474945" type="System">
+                                    <param id="0" name="Object to create">DefaultFont</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">MenuItem.X + 32</param>
+                                    <param id="3" name="Y">MenuItem.Y</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="603675683876233" type="DefaultFont">
+                                    <param id="0" name="Width">512</param>
+                                    <param id="1" name="Height">96</param>
+                                </action>
+                                <action id="2" name="Set scale" sid="981093683358747" type="DefaultFont">
+                                    <param id="0" name="Scale">2</param>
+                                </action>
+                                <action id="0" name="Set text" sid="584079742398406" type="DefaultFont">
+                                    <param id="0" name="Text">MenuItem.Text</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="143655676527568" type="DefaultFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Value">&quot;Menu&quot; &amp; MenuItem.ID</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="804997992139976" type="DefaultFont">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="746732484442320" type="DefaultFont">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="982361056879961" type="DefaultFont">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="390491552670799">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="928805012152653" type="System">
+                                    <param id="0" name="Object to create">DefaultFont</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">10</param>
+                                    <param id="3" name="Y">100</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="551081597852059" type="DefaultFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Value">&quot;Description&quot;</param>
+                                </action>
+                                <action id="2" name="Set scale" sid="805571273752973" type="DefaultFont">
+                                    <param id="0" name="Scale">1.5</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="537959059292694" type="DefaultFont">
+                                    <param id="0" name="Width">190</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="544230411062979" type="DefaultFont">
+                                    <param id="0" name="Height">200</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="263966050905379" type="DefaultFont">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="398562137037283">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="868231193231679" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="405437667274239" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="530636544808633">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="733149773555926" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="904538393597237" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="868288483016329">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="191846909787376" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="180462058715313" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Removes the dying animation.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="547346286127297">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="243122846776389" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="558162892974333" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Automatically tries again after dying.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="760992377241560">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="158453983554045" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="494271195606606" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Prints mouse cursor&apos;s coordinates in the top right corner and you can toggle time with &apos;V&apos;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="377540851335023">
@@ -1475,7 +1530,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="753361354653592" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}192{###}3{###}&quot;Heal In Phase Transition&quot;{###}&quot;HealTransition On&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}192{###}3{###}&quot;Heal At Phase 2&quot;{###}&quot;HealTransition On&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1500,7 +1555,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="158008827499976" type="MenuItem">
                                     <param id="0" name="Instance variable">Text</param>
-                                    <param id="1" name="Value">&quot;Heal In Phase Transition&quot;</param>
+                                    <param id="1" name="Value">&quot;Heal At Phase 2&quot;</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="689617802523137" type="MenuItem">
                                     <param id="0" name="Instance variable">Action</param>
@@ -1627,6 +1682,105 @@
                                     <param id="2" name="Value">0</param>
                                 </action>
                             </actions>
+                        </event-block>
+                        <event-block sid="772808290407751">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="188016395444759" type="System">
+                                    <param id="0" name="Object to create">DefaultFont</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">10</param>
+                                    <param id="3" name="Y">100</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="230578634638711" type="DefaultFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Value">&quot;Description&quot;</param>
+                                </action>
+                                <action id="2" name="Set scale" sid="985326155788545" type="DefaultFont">
+                                    <param id="0" name="Scale">1.5</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="620297026875398" type="DefaultFont">
+                                    <param id="0" name="Width">190</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="130923295730299" type="DefaultFont">
+                                    <param id="0" name="Height">200</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="788341859368173" type="DefaultFont">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="828111297548558">
+                                    <conditions>
+                                        <condition id="7" name="Compare size" sid="620083866531200" type="MenuStack">
+                                            <param id="0" name="Axis">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="491823072613629" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Replaces all the attacks with harder versions.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="510281312932680">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="629266839749257" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="711301624340359" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Changes your max HP to 1.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="629084007310699">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="650568735608621" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="828555655246172" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Removes dying.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="853090518485752">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="145073103681177" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="257681860826958" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Heals you to max HP and restores all your items when reaching phase 2.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="495775108695290">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="384382211568794" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="665242991413274" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;HP cannot be seen.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1908,6 +2062,48 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="415921472639429">
+                    <conditions>
+                        <condition id="0" name="On function" sid="580624922697441" type="Function">
+                            <param id="0" name="Name">&quot;Dev Mode On&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="963628175687638" type="System">
+                            <param id="0" name="Variable">Dev_Mode</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="400283273625736" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;Settings&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="849929792331729" type="Function">
+                            <param id="0" name="Name">&quot;Settings&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="480984336815681">
+                    <conditions>
+                        <condition id="0" name="On function" sid="278932236705960" type="Function">
+                            <param id="0" name="Name">&quot;Dev Mode Off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="428721866204113" type="System">
+                            <param id="0" name="Variable">Dev_Mode</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="776994210569304" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;Settings&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="223356095945249" type="Function">
+                            <param id="0" name="Name">&quot;Settings&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="303367661295739">
                     <conditions>
                         <condition id="0" name="On function" sid="272973938737366" type="Function">
@@ -1943,6 +2139,10 @@
                             <param id="0" name="Name">&quot;SettingsDifficulty&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="-9" name="Set value" sid="951516955807046" type="System">
+                            <param id="0" name="Variable">Name</param>
+                            <param id="1" name="Value">&quot;Assist&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="875937383403399">
@@ -1963,6 +2163,10 @@
                         <action id="0" name="Call function" sid="628872596637476" type="Function">
                             <param id="0" name="Name">&quot;SettingsDifficulty&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-9" name="Set value" sid="322686994799994" type="System">
+                            <param id="0" name="Variable">Name</param>
+                            <param id="1" name="Value">&quot;Chara&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2007,6 +2211,171 @@
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block any="1" sid="838704576183852">
+                    <conditions>
+                        <condition id="0" name="On function" sid="266747864327265" type="Function">
+                            <param id="0" name="Name">&quot;MenuSelect&quot;</param>
+                        </condition>
+                        <condition id="0" name="On function" sid="727324754688137" type="Function">
+                            <param id="0" name="Name">&quot;RunMenu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="500177035435366">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="338368022016691" type="DefaultFont">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Description&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="168362895706065">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="238940640127332" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="223514244247992" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="288314232782682">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="939474645907032" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="779665135901632" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="885091911285527">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="252536541663816" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="611002462470475" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Removes the dying animation.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="560864919714553">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="848932614010745" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="761038312750363" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Automatically tries again after dying.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="831943992900085">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="652308747866049" type="MenuStack">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="866718585227026" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Prints mouse cursor&apos;s coordinates in the top right corner and you can toggle time with &apos;V&apos;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="819231433240488">
+                                    <conditions>
+                                        <condition id="7" name="Compare size" sid="288761795983357" type="MenuStack">
+                                            <param id="0" name="Axis">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="527224043106785" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Replaces all the attacks with harder versions.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="327165579484184">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="745123241074227" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="449305572840825" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Changes your max HP to 1.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="392197723261103">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="873940271224733" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="582234228122388" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Removes dying.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="376532404360443">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="623928185818314" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="409018783583317" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;Heals you to full and restores all your items when reaching phase 2.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="707802910544289">
+                                    <conditions>
+                                        <condition id="0" name="Compare at X" sid="795524422555449" type="MenuStack">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="990971371820360" type="DefaultFont">
+                                            <param id="0" name="Text">&quot;HP cannot be seen.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="8566872012264114">
                     <conditions>
@@ -2176,7 +2545,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="787063535972153" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;The Start of Bad Time&quot;{###}&quot;MenuSingleAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;Start&quot;{###}&quot;MenuSingleAttack&quot;</param>
                                 </action>
                                 <action id="0" name="Call function" sid="995563076286759" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
